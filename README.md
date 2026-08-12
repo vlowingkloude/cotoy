@@ -1,2 +1,10 @@
 # cotoy
-A toy m:n coroutine in C
+
+
+mkdir build
+
+cd build
+
+cmake -DCMAKE_BUILD_TYPE=Release -S .. -B .
+
+cmake --build . --target main

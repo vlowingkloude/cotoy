@@ -31,7 +31,7 @@ int main() {
 
     pthread_t workers[n_threads];
     for (int i = 0; i < n_threads; i++) {
-        pthread_create(&workers[n_threads], NULL, worker, s);
+        pthread_create(&workers[i], NULL, worker, s);
     }
 
     bool expected = false;
